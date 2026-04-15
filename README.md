@@ -48,16 +48,17 @@ class Estudiante:
         return f'Estudiante [nombre: {self.__nombre}, cedula: {self.__cedula}, semestre: {self.__semestre}, email: {self.__email}]'
 
 
-# PRUEBA
 if __name__ == '__main__':
     estudiante1 = Estudiante('michelle', '1234567890', '4er semestre', 'michelle.cccc@example.com')
 
     print(estudiante1)
 
+   
     print(f"Nombre: {estudiante1.nombre}")
     print(f"Cédula: {estudiante1.cedula}")
     print(f"Semestre: {estudiante1.semestre}")
     print(f"Email: {estudiante1.email}")
+
 
     estudiante1.email = 'michelle.cccc@gmail.com'
     print(f"Nuevo Email: {estudiante1.email}")
